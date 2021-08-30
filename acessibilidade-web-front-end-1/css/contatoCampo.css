@@ -20,14 +20,18 @@
   transition: .2s ease-in;
 }
 
+.contatoCampo-checkbox {
+  /* display: none; */
+  /* visibility: hidden; */
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
   content: 'x';
   color: #fff;
   background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
-}
-
-.contatoCampo-checkbox {
-  display: none;
 }
 
 .contatoCampo-icone {
