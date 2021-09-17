@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/dialogNewsletter.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -59,7 +60,7 @@
       </h1>
     </a>
 
-    <nav class="cabecalho-nav">
+    <nav class="cabecalho-nav" aria-labelledby="">
       <ul>
         <li class="cabecalho-nav-item"><a href="#">Sobre</a></li>
         <li class="cabecalho-nav-item"><a href="#">Planos</a></li>
@@ -450,7 +451,8 @@
           </p>
         </div>
 
-        <video src="img/formacao-java.mp4" class="secaoInstitucional-video">
+        <video src="img/formacao-java.mp4" class="secaoInstitucional-video" controls>
+          <track src="img/legenda-portugues-brasil.vtt" kind="subtitles" srclang="pt-BR" label="Português (Brasil)">
         </video>
 
       </div>
