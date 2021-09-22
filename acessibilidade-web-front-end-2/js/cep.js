@@ -1,5 +1,8 @@
 async function getCityData() {
     const zipCodeNumber = document.getElementById('cep').value;
+    if (zipCodeNumber === '' || zipCodeNumber.trim() === '') {
+        return;
+    }
     try {
         const zipCodeInfo = await axios.get(`https://viacep.com.br/ws/${zipCodeNumber}/json/`);
 
