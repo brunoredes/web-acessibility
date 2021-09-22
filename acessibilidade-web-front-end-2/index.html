@@ -385,7 +385,7 @@
 
           <div class="contatoCampo">
             <label>CEP: </label>
-            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required id="cep" onblur="getCityData()">
           </div>
 
           <div class="contatoCampo">
@@ -498,9 +498,11 @@
     </div>
 
   </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/dialog.js"></script>
   <script src="js/formatCurrency.js"></script>
+  <script src="js/cep.js"></script>
 </body>
 
 </html>
