@@ -1,18 +1,18 @@
 // Variáveis
-var btnAbreDialog = document.querySelector('#abreDialog');
-var dialog = document.querySelector('.dialogNewsletter');
-var dialogBody = document.querySelector('.dialogNewsletter-body');
-var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
+const btnAbreDialog = document.querySelector('#abreDialog');
+const dialog = document.querySelector('.dialogNewsletter');
+const dialogBody = document.querySelector('.dialogNewsletter-body');
+const dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
 
 
 // Quando abrir a dialog...
-btnAbreDialog.addEventListener('click', function() {
+btnAbreDialog.addEventListener('click', () => {
   dialog.classList.add('dialogNewsletter--aberto');
 });
 
 function fechandoDialog() {
   document.activeElement.blur();
-  dialog.classList.remove('dialogNewsletter--aberto');     
+  dialog.classList.remove('dialogNewsletter--aberto');
 }
 
 // Listeners

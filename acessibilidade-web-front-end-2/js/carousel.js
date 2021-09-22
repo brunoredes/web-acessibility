@@ -1,15 +1,13 @@
-var btns = document.querySelectorAll('.listaDeArtigos-slider-item');
+const btns = document.querySelectorAll('.listaDeArtigos-slider-item');
 
 // Percorre todos os botoes controladores
-btns.forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    
 
+for (const button of btns) {
+  button.addEventListener('click', () => {
     // Remove classe 'ativo' dos outros botoes
-    btns.forEach(function(btnRemoveClass) {
-      btnRemoveClass.classList.remove('listaDeArtigos-slider-item--ativo')
-    })
-
-    this.classList.add('listaDeArtigos-slider-item--ativo')
-  })
-})
+    for (const buttonRemoveClass of btns) {
+      buttonRemoveClass.classList.remove('listaDeArtigos-slider-item--ativo');
+    }
+    this.classList.add('listaDeArtigos-slider-item--ativo');
+  });
+}
