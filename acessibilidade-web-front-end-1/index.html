@@ -478,7 +478,6 @@
                   maxlength="8"
                   placeholder="Exemplo: 04101-300"
                   required
-                  onblur="getCityData()"
                 />
               </div>
 
@@ -686,7 +685,13 @@
           <button type="submit" class="dialogNewsletter-btn">
             Assinar newsletter
           </button>
-          <button type="button" class="dialogNewsletter-fechar" aria-label="Fechar modal">X</button>
+          <button
+            type="button"
+            class="dialogNewsletter-fechar"
+            aria-label="Fechar modal"
+          >
+            X
+          </button>
         </form>
       </div>
       <div class="dialogNewsletter-overlay"></div>
@@ -694,11 +699,11 @@
 
     <!--fim .dialogNewsletter-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/cep.js" type="module"></script>
 
     <script src="js/inert.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/dialog.js"></script>
     <script src="js/formatCurrency.js"></script>
-    <script src="js/cep.js"></script>
   </body>
 </html>
