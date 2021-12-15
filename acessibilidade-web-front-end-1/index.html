@@ -263,9 +263,11 @@
         <!--fim .secaoPlanos-->
 
         <section class="secaoBlog container">
-          <h1 class="secaoBlog-titulo tituloPadrao">BLOG</h1>
+          <h2 class="secaoBlog-titulo tituloPadrao">BLOG</h2>
 
-          <ul class="listaDeArtigos">
+          <h3 id="tituloBlog" class="escondeVisualmente">Lista de artigos</h3>
+
+          <ol class="listaDeArtigos" aria-labelledby="tituloBlog">
             <li id="new0" class="listaDeArtigos-item">
               <article class="listaDeArtigos-artigo">
                 <img
@@ -331,7 +333,7 @@
                 </p>
               </article>
             </li>
-          </ul>
+          </ol>
 
           <nav aria-label="nav" role="navigation">
             <ul class="listaDeArtigos-slider">
@@ -475,7 +477,7 @@
                 <input
                   id="cep"
                   type="text"
-                  maxlength="8"
+                  maxlength="9  "
                   placeholder="Exemplo: 04101-300"
                   required
                 />

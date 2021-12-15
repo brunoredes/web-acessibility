@@ -1,7 +1,7 @@
 import { AddressBuilder } from './builder/Address.js';
 
 async function getCityData() {
-    const zipCodeNumber = document.getElementById('cep').value;
+    const zipCodeNumber = document.getElementById('cep').value.replace('-', '');
     if (zipCodeNumber === '' || zipCodeNumber.trim() === '') {
         return;
     }
