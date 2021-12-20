@@ -15,9 +15,13 @@ campoEmail
             domains: domains,                       // optional
             topLevelDomains: topLevelDomains,       // optional
             secondLevelDomains: secondLevelDomains, // optional
-            distanceFunction: superStringDistance,  // optional
             suggested: function (suggestion) {
-                console.log(suggestion.full);
+                sugestao.style.display = 'inline-block';
+                sugestao.textContent = `Você quis dizer: ${suggestion.full} ?`;
+                sugestao.parentNode.classList.add('contatoCampo--erro');
+                campoEmail.classList.add('contatoCampo--validouErro');
+                sugestao.setAttribute('tabindex', '0');
+                sugestao.setAttribute('role', 'alert');
             }
         });
     });
