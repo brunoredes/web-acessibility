@@ -455,8 +455,7 @@
                     required
                     id="email"
                   />
-                  <span class="contatoCampo-msg contatoCampo-msg--erro">
-                    Você quis dizer <a href="#">gmail.com?</a>
+                  <span class="contatoCampo-msg contatoCampo-msg--erro" id="sugestao">
                   </span>
                 </div>
 
@@ -478,9 +477,10 @@
                   <input
                     id="cep"
                     type="text"
-                    maxlength="9  "
+                    maxlength="9"
                     placeholder="Exemplo: 04101-300"
                     required
+                    value="02132-115"
                   />
                 </div>
 
@@ -530,13 +530,9 @@
 
                 <div class="contatoCampo">
                   <label for="mensagem">Mensagem: </label>
-                  <textarea
-                    id="mensagem"
-                    name=""
-                    cols="30"
-                    rows="10"
-                    required
-                  ></textarea>
+                  <textarea id="mensagem" name="" cols="30" rows="10" required>
+eeeeeee</textarea
+                  >
                 </div>
 
                 <div class="contatoCampo">
@@ -705,6 +701,8 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./js/cep.js" type="module"></script>
     <script src="js/validacaoCep.js"></script>
+    <script src="js/Mailcheck.js"></script>
+    <script src="js/mailcheckConfig.js"></script>
     <script src="js/inert.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/dialog.js"></script>
