@@ -15,7 +15,7 @@ indicadorSlideAtual.id = 'escondeVisualmente';
 
 for (const button of btns) {
   button.addEventListener('click', () => {
-
+    
     const dataSliderItem = button.getAttribute('data-sliderItem');
     noticias.forEach(noticia => {
       noticia.style.display = 'none';
@@ -24,7 +24,7 @@ for (const button of btns) {
         noticia.style.display = 'block';
       }
     })
-
+    
     document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
     button.append(indicadorSlideAtual);
     // Remove classe 'ativo' dos outros botoes
